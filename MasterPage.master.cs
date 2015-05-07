@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows;
-using System.Windows.Forms.Label;
+
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
@@ -11,16 +10,12 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             AdminLink.Visible = true;
         }
-
-        Label newLabel = new Label();
-
         
-
         SqlRowCount RowCounter = new SqlRowCount("cars");
 
         for (int i = 0; i < RowCounter.RowCount; i++)
         {
-            // Insert new label.
+            
         }
     }
 }
