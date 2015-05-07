@@ -21,7 +21,18 @@
             <div class="LeftSideMenu">
                 <h2>Bil mærker</h2>
                 <ul>
-                    <!-- Inser labels here. -->
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink>
+                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    <asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink>
+                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:HyperLink ID="HyperLink5" runat="server">HyperLink</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink6" runat="server">HyperLink</asp:HyperLink>
+                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    <asp:HyperLink ID="HyperLink7" runat="server">HyperLink</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink8" runat="server">HyperLink</asp:HyperLink>
                 </ul>
             </div>
 
