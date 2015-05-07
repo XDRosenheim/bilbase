@@ -39,7 +39,12 @@
     <br />
     <br />
 
-    <asp:Button ID="EditUser_Btn" runat="server" Text="Rediger" OnClick="EditUser_Btn_Click" />
-
+    <asp:Button ID="EditUser_Btn" runat="server" Text="Rediger" OnClick="EditUser_Btn_Click" Width="150px" />
+    <asp:Button ID="EditUser_del" runat="server" Text="Slet" OnClick="EditUser_del_Click" Width="50px" />
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Visible="false" Text="Er du sikker?"></asp:Label>
+    <br />
+    <asp:Button ID="btn_sure" runat="server" OnClick="btn_sure_Click" Text="Ja" Visible="false"/>
+    <asp:Button ID="btn_NOPE" runat="server" OnClick="btn_NOPE_Click" Text="Nej" Visible="false"/>
 </asp:Content>
-
