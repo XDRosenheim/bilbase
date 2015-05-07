@@ -26,6 +26,12 @@
 
 .Links {
     float: right;
+    width: 100px;
+    height:auto;
+    font-family:'Comic Sans MS';
+    font-size: 125%;
+    text-align:center;
+    border:solid black 2px;
 }
 
 .Content {

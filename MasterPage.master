@@ -17,17 +17,16 @@
                 <asp:HyperLink class="Links" ID="AdminLink" runat="server" NavigateUrl="/User/Admin.aspx" Visible="False">Admin</asp:HyperLink>
                 <asp:HyperLink class="Links" ID="LoginHyper" runat="server" NavigateUrl="/Login.aspx">Login</asp:HyperLink>
             </div>
-
             <div class="LeftSideMenu">
                 <h2>Bil mærker</h2>
                 <ul>
-                    <li class="MenuHeader"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></li>
+                    <li class="MenuHeader"><asp:Label ID="Label1" runat="server" Text="Honda"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink></li>
-                    <li class="MenuHeader"><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></li>
+                    <li class="MenuHeader"><asp:Label ID="Label2" runat="server" Text="Toyota"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink></li>
-                    <li class="MenuHeader"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></li>
+                    <li class="MenuHeader"><asp:Label ID="Label3" runat="server" Text="Skoda"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink5" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink6" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></li>
@@ -38,7 +37,6 @@
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink10" runat="server">HyperLink</asp:HyperLink></li>
                 </ul>
             </div>
-
             <div class="Content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
