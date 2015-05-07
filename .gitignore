@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 *.suo
 *.excludeApp_Code/SqlString.cs
+App_Code/SqlString.cs
