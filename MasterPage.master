@@ -21,7 +21,7 @@
                 <h2>Bil mærker</h2>
                 <ul>
                     <li class="MenuHeader"><asp:Label ID="Label1" runat="server" Text="Honda"></asp:Label></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/Cars/Honda/Civic.aspx">Civic</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label2" runat="server" Text="Toyota"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink></li>

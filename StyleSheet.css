@@ -17,11 +17,12 @@
     text-align:left;
 }
 
-.Top .Logo {
+.Logo {
     min-height: 100px;
     min-width: 100px;
     max-height: 150px;
     max-width: 150px;
+    margin: 20px;
 }
 
 .Links {
@@ -64,4 +65,13 @@
     color: blue;
     font-size: medium;
     margin-left: 10px;
+}
+
+.Content table {
+    background-color:#FF9900;
+}
+
+.Content table td {
+    width:100px;
+    text-align:center;
 }
