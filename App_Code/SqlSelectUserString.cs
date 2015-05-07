@@ -28,10 +28,9 @@ public class SqlSelectUserString
 
         DBCommand.Connection = DBStr;
         DBStr.Open();
+        //DBCommand.ExecuteReader();
 
-        DBCommand.ExecuteReader();
-        //int count = (int)DBCommand.ExecuteScalar();
-        //SqlUserReader = DBCommand.ExecuteReader();
+        SqlUserReader = DBCommand.ExecuteReader();
 
         while (SqlUserReader.Read())
         {
