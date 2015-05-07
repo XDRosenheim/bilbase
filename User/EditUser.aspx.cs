@@ -19,7 +19,7 @@ public partial class EditUser : System.Web.UI.Page
             Response.Redirect("/");
         }
 
-        SqlSelectUserString SelectUsers = new SqlSelectUserString("SELECT * FROM users");
+        //SqlSelectUserString SelectUsers = new SqlSelectUserString("SELECT * FROM users");
 
         SqlConnection DBStr = new SqlConnection(@"Data Source=E310-NY-W08;Initial Catalog=bilbase;Integrated Security=True");
 
