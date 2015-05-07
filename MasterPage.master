@@ -22,13 +22,13 @@
                 <ul>
                     <li class="MenuHeader"><asp:Label ID="Label1" runat="server" Text="Honda"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/Cars/Honda/Civic.aspx">Civic</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="/Cars/Honda/Jazz.aspx">Jazz</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label2" runat="server" Text="Toyota"></asp:Label></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="/Cars/Toyota/Aygo">Aygo</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="/Cars/Toyota/Yaris">Yaris</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label3" runat="server" Text="Skoda"></asp:Label></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink5" runat="server">HyperLink</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink6" runat="server">HyperLink</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="/Cars/Skoda/Fabia.aspx">Fabia</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="/Cars/Skoda/Octavia.aspx">Octavia</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink7" runat="server">HyperLink</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink8" runat="server">HyperLink</asp:HyperLink></li>
