@@ -17,7 +17,7 @@ public partial class Register : System.Web.UI.Page
         {
             if (EnterPassword_Field.Text == ReEnterPassword_Field.Text)
             {
-                SqlString Insert = new SqlString("INSERT INTO users VALUES('" + EnterUsername_Field.Text.ToLower() + "','" 
+                SqlModifyUserString Insert = new SqlModifyUserString("INSERT INTO users VALUES('" + EnterUsername_Field.Text.ToLower() + "','" 
                     + EnterPassword_Field.Text + "',2,'" + EnterMail_Field.Text.ToLower() + "','" + EnterTlf_Field.Text + "')");
 
                 Status_label.Visible = true;

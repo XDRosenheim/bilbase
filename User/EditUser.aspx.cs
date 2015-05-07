@@ -21,7 +21,8 @@ public partial class EditUser : System.Web.UI.Page
 
         //SqlSelectUserString SelectUsers = new SqlSelectUserString("SELECT * FROM users");
 
-        SqlConnection DBStr = new SqlConnection(@"Data Source=E310-NY-W08;Initial Catalog=bilbase;Integrated Security=True");
+        SqlString DatabaseString = new SqlString();
+        SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
 
         SqlCommand DBSelectAll = new SqlCommand("SELECT * FROM users", DBStr);
         DBSelectAll.Connection = DBStr;
@@ -43,7 +44,7 @@ public partial class EditUser : System.Web.UI.Page
         if (Username_Field.Text != "" || Password_Field.Text != "" || Mail_Field.Text != "" || Tlf_Field.Text != "" || Rolle_DDL.Text != "" )
         {
 
-            SqlString EditUsers = new SqlString("Update users set username='" + Username_Field.Text + "', password='" + Password_Field.Text + "', mail='" + Mail_Field.Text + "', tlf='" + Tlf_Field.Text + "', usergroup=" + Rolle_DDL.Text + " where username='" + GetUser_DDL.Text + "'");
+            SqlModifyUserString EditUsers = new SqlModifyUserString("Update users set username='" + Username_Field.Text + "', password='" + Password_Field.Text + "', mail='" + Mail_Field.Text + "', tlf='" + Tlf_Field.Text + "', usergroup=" + Rolle_DDL.Text + " where username='" + GetUser_DDL.Text + "'");
 
             StatusText_Label.Text = "Du har redigeret informationer for brugeren " + GetUser_DDL.Text;
         }

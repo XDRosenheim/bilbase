@@ -12,8 +12,9 @@ public class SqlRowCount
     public int RowCount = 0;
 	public SqlRowCount(string tableToCountIn)
 	{
+        SqlString DatabaseString = new SqlString();
 
-        SqlConnection DBStr = new SqlConnection(@"Data Source=E310-NY-W04\ROSENHEIM;Initial Catalog=bilbase;Integrated Security=True");
+        SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
         SqlCommand DBCommand = new SqlCommand("SELECT COUNT(*) FROM " + tableToCountIn);
         SqlDataReader SqlReader;
 

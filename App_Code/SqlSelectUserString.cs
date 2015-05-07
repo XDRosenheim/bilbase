@@ -22,7 +22,9 @@ public class SqlSelectUserString
     public SqlSelectUserString(string commandString)
     {
         //string[] DB_user_username = new string[6];
-        SqlConnection DBStr = new SqlConnection(@"Data Source=E310-NY-W04\ROSENHEIM;Initial Catalog=bilbase;Integrated Security=True");
+        SqlString DatabaseString = new SqlString();
+
+        SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
 
         SqlCommand DBCommand = new SqlCommand(commandString, DBStr);
 
