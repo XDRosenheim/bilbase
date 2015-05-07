@@ -10,14 +10,8 @@ public partial class EditUser : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["UserId"] != null && Session["UserId"].ToString() == "1")
-        {
-
-        }
-        else
-        {
-            Response.Redirect("/");
-        }
+        if (Session["UserId"] != null && Session["UserId"].ToString() == "1") { }
+        else { Response.Redirect("/"); }
 
         SqlString DatabaseString = new SqlString();
         SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());

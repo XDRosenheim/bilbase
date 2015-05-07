@@ -23,6 +23,11 @@
     max-height: 150px;
     max-width: 150px;
 }
+
+.Links {
+    float: right;
+}
+
 .Content {
     height:90%;
     width:80%;
