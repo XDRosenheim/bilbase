@@ -19,16 +19,13 @@ public partial class EditUser : System.Web.UI.Page
             Response.Redirect("/");
         }
 
-        //SqlSelectUserString SelectUsers = new SqlSelectUserString("SELECT * FROM users");
-
         SqlString DatabaseString = new SqlString();
         SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
 
         SqlCommand DBSelectAll = new SqlCommand("SELECT * FROM users", DBStr);
         DBSelectAll.Connection = DBStr;
-        SqlDataReader Reader;
         DBStr.Open();
-        Reader = DBSelectAll.ExecuteReader();
+        SqlDataReader Reader = DBSelectAll.ExecuteReader();
 
         int i = 0;
         while(Reader.Read())
