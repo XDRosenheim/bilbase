@@ -16,7 +16,8 @@ public class SqlCarSelect
     {
         SqlString DatabaseString = new SqlString();
         SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
-        SqlCommand DBcommand = new SqlCommand("SELECT * FROM cars WHERE model='" + carModel + "'", DBStr);
+        SqlCommand DBcommand = new SqlCommand("select * from cars inner join maerke on maerke.maerkeID = cars.maerke inner join braendstof on braendstof.ID = cars.braendstofType WHERE cars.model='" + carModel + "'", DBStr);
+        DBStr.Open();
         SqlDataReader Reader = DBcommand.ExecuteReader();
 
         //maerke, braendstofType, model, kmperliter, pris, aargang, saeder, doere
@@ -26,9 +27,9 @@ public class SqlCarSelect
             {
                 Car_FuelUse = Reader["kmperliter"].ToString();
             }
-            Car_Brand = Reader["maerke"].ToString();
+            Car_Brand = Reader["maerkeName"].ToString();
             Car_Model = Reader["model"].ToString();
-            Car_Fueltype = Reader["braendstoftype"].ToString();
+            Car_Fueltype = Reader["type"].ToString();
             Car_Price = Reader["pris"].ToString();
             Car_Year = Reader["aargang"].ToString();
             Car_Seats = Reader["saeder"].ToString();
