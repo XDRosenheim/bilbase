@@ -9,6 +9,6 @@
     <br />
     <asp:Label ID="Label1" runat="server" Text="Edit database "></asp:Label>
     <asp:Button ID="Button1" runat="server" Text="Cars" />
-    <asp:Button ID="Button2" runat="server" Text="Users" />
+    <asp:Button ID="EditUser_Btn" runat="server" Text="Users" OnClick="EditUser_Btn_Click" />
 
 </asp:Content>
