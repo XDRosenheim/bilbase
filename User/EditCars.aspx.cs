@@ -36,7 +36,7 @@ public partial class EditCars : System.Web.UI.Page
         SqlSelectCarsString GetCars = new SqlSelectCarsString("SELECT * FROM cars INNER JOIN maerke ON maerke.maerkeID = cars.maerke INNER JOIN braendstof ON braendstof.ID = cars.braendstofType WHERE model='" + GetCarModel_DDL.Text + "' ");
 
         Model_Field.Text = GetCars.DB_cars_model;
-        BraendstofType_Field.Text = GetCars.DB_cars_braendstoftype;
+        BraendstofType_DDL.Text = GetCars.DB_cars_braendstoftype;
         KmPerLiter_Field.Text = GetCars.DB_cars_kmperliter;
         Pris_Field.Text = GetCars.DB_cars_pris;
         Aargang_Field.Text = GetCars.DB_cars_aargang;
@@ -44,29 +44,28 @@ public partial class EditCars : System.Web.UI.Page
         Doere_Field.Text = GetCars.DB_cars_doere;
 
         if (GetCars.DB_cars_braendstoftype == "El")
-        {
-            KmPerLiter_Label.Text = "KM/Opladning:";
+        { 
+            KmPerLiter_Label.Text = "KM/Opladning:"; 
         }
-        else
-        {
-            KmPerLiter_Label.Text = "KM per liter:";
+        else 
+        { 
+            KmPerLiter_Label.Text = "KM per liter:"; 
         }
     }
-    protected void EditUser_Btn_Click(object sender, EventArgs e)
+    protected void EditUser_Btn_Click(object sender, EventArgs e) // Copy pasta
     {
-        if (Model_Field.Text != "" || BraendstofType_Field.Text != "" || KmPerLiter_Field.Text != "" || Pris_Field.Text != "" || Aargang_Field.Text != "" || Saeder_Field.Text != "" || Doere_Field.Text != "")
+        if (Model_Field.Text != "" || BraendstofType_DDL.Text != "" || KmPerLiter_Field.Text != "" || Pris_Field.Text != "" || Aargang_Field.Text != "" || Saeder_Field.Text != "" || Doere_Field.Text != "")
         {
+            SqlModifyCarsString EditUsers = new SqlModifyCarsString("Update cars set model='" + Model_Field.Text + "', braendstoftype='" + BraendstofType_DDL.Text + "', kmperliter='" + KmPerLiter_Field.Text + "', pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
 
-            SqlModifyUserString EditUsers = new SqlModifyUserString("Update users set model='" + Model_Field.Text + "', braendstoftype='" + BraendstofType_Field.Text + "', kmperliter='" + KmPerLiter_Field.Text + "', pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
-
-            StatusText_Label.Text = "Du har redigeret informationer for brugeren " + GetCarModel_DDL.Text;
+            StatusText_Label.Text = "Du har redigeret informationer for bilen " + GetCarModel_DDL.Text;
         }
         else
         {
             StatusText_Label.Text = "Du har ikke indtastet en værdi i alle felterne.";
         }
     }
-    protected void EditUser_del_Click(object sender, EventArgs e)
+    protected void EditUser_del_Click(object sender, EventArgs e) // Copy pasta
     {
         if (Model_Field.Text == "")
         {
@@ -82,7 +81,7 @@ public partial class EditCars : System.Web.UI.Page
     }
     protected void btn_sure_Click(object sender, EventArgs e)
     {
-        SqlModifyUserString DelUser = new SqlModifyUserString("DELETE FROM cars INNER JOIN maerke ON maerke.maerkeID = cars.maerke INNER JOIN braendstof ON braendstof.ID = cars.braendstofType WHERE model='" + Model_Field.Text + "'");
+        SqlModifyCarsString DelUser = new SqlModifyCarsString("DELETE FROM cars INNER JOIN maerke ON maerke.maerkeID = cars.maerke INNER JOIN braendstof ON braendstof.ID = cars.braendstofType WHERE model='" + Model_Field.Text + "'");
         Response.Redirect("/User/EditCars.aspx");
     }
     protected void btn_NOPE_Click(object sender, EventArgs e)

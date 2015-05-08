@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Fabia : System.Web.UI.Page
+public partial class Rio : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        SqlCarSelect CarSelect = new SqlCarSelect(""); //TODO
+        SqlCarSelect CarSelect = new SqlCarSelect("Rio");
 
         car_model.Text = CarSelect.Car_Model;
         car_mærke.Text = CarSelect.Car_Brand;

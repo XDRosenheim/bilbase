@@ -25,6 +25,5 @@ public partial class Model_S : System.Web.UI.Page
         }
 
         LiteralControl LT = new LiteralControl();
-        //LT.Text
     }
 }

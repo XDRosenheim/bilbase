@@ -21,7 +21,13 @@
     <br />
 
     <asp:Label ID="BraendstofType_Label" runat="server" Text="Brændstofs type:"></asp:Label>
-    <asp:TextBox ID="BraendstofType_Field" runat="server"></asp:TextBox>
+    <asp:DropDownList ID="BraendstofType_DDL" runat="server">
+        <asp:ListItem Value="1" Text="Benzin"></asp:ListItem>
+        <asp:ListItem Value="2" Text="Diesel"></asp:ListItem>
+        <asp:ListItem Value="3" Text="El"></asp:ListItem>
+        <asp:ListItem Value="4" Text="Hybrid"></asp:ListItem>
+    </asp:DropDownList>
+<!-- <asp:TextBox ID="BraendstofType_Field" runat="server"></asp:TextBox> -->
     <br />
 
     <asp:Label ID="KmPerLiter_Label" runat="server" Text="KM per liter:"></asp:Label>
