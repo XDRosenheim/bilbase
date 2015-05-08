@@ -23,5 +23,8 @@ public partial class Model_S : System.Web.UI.Page
         {
             Label4.Text = "KM/Opladning";
         }
+
+        LiteralControl LT = new LiteralControl();
+        //LT.Text
     }
 }

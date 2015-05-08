@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
+﻿using System.Data.SqlClient;
 
 /// <summary>
 /// Brug kun til biler, tak.
@@ -20,7 +16,7 @@ public class SqlCarSelect
         DBStr.Open();
         SqlDataReader Reader = DBcommand.ExecuteReader();
 
-        //maerke, braendstofType, model, kmperliter, pris, aargang, saeder, doere
+        //maerkeName, type, model, kmperliter, pris, aargang, saeder, doere
         while (Reader.Read())
         {
             if (Reader["kmperliter"].ToString() != null)
