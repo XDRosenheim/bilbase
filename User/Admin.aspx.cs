@@ -18,4 +18,8 @@ public partial class AdminClass : System.Web.UI.Page
     {
         Response.Redirect("/User/EditUser.aspx");
     }
+    protected void EditCar_Btn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("/User/EditCars.aspx");
+    }
 }
