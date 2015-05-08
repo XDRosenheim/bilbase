@@ -32,9 +32,9 @@
                     <li class="MenuHeader"><asp:Label ID="Label4" runat="server" Text="Chevrolet"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="/Cars/Chevrolet/Camaro.aspx">Camaro</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="/Cars/Chevrolet/Spark.aspx">Spark</asp:HyperLink></li>
-                    <li class="MenuHeader"><asp:Label ID="Label5" runat="server" Text="Renault"></asp:Label></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="/Cars/Renault/Captur.aspx">Captur</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="/Cars/Renault/Clio.aspx">Clio</asp:HyperLink></li>
+                    <li class="MenuHeader"><asp:Label ID="Label5" runat="server" Text="Tesla"></asp:Label></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="/Cars/Tesla/Model-S.aspx">Model S</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="/Cars/Tesla/Clio.aspx">Clio</asp:HyperLink></li>
                 </ul>
             </div>
             <div class="Content">
