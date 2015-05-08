@@ -6,15 +6,27 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         if (Session["UserID"] != null && Session["UserID"].ToString() == "1")
         {
+            // Show links
             AdminLink.Visible = true;
-            LoginHyper.Visible = false;
             LogoutHyper.Visible = true;
+            // Hide links
+            LoginHyper.Visible = false;
         }
         else if (Session["UserID"] != null)
         {
-            LoginHyper.Visible = false;
+            // Show links
             LogoutHyper.Visible = true;
+            // Hide links
+            AdminLink.Visible = false;
+            LoginHyper.Visible = false;
         }
-        LogoutHyper.Visible = false;
+        else
+        {
+            // Show links
+            LoginHyper.Visible = true;
+            // Hide links
+            LogoutHyper.Visible = false;
+            AdminLink.Visible = false;
+        }
     }
 }
