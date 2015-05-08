@@ -16,6 +16,7 @@
                 <a href="/Default.aspx" class="Logo"><img src="/img/logo.png" /></a>
                 <asp:HyperLink class="Links" ID="AdminLink" runat="server" NavigateUrl="/User/Admin.aspx" Visible="False">Admin</asp:HyperLink>
                 <asp:HyperLink class="Links" ID="LoginHyper" runat="server" NavigateUrl="/Login.aspx">Login</asp:HyperLink>
+                <asp:HyperLink class="Links" ID="LogoutHyper" runat="server" NavigateUrl="/Logout.aspx">Log ud</asp:HyperLink>
             </div>
             <div class="LeftSideMenu">
                 <h2>Bil mærker</h2>
