@@ -6,4 +6,3 @@
     <h1>Husk at ændre SQL STRING !</h1>
     <img src="img/rolls_royce.jpg" height="400px" width="500px" />
 </asp:Content>
---
