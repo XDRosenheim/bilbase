@@ -25,7 +25,7 @@
                 <td><asp:Label ID="car_doors" runat="server" Text="N/A"></asp:Label></td>
             </tr>
         </table>
-        <img src="/img/Toyota_Aygo.jpg" />
+        <img src="/img/Tesla_Model-S.jpg" />
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
         <br />
