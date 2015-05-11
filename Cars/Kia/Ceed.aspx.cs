@@ -32,7 +32,7 @@ public partial class Ceed : System.Web.UI.Page
             for (int i = 1; i <= rowCounter.Rows; i++)
             {
                 SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Kia_Ceed WHERE ID=" + i);
-                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p><br />";
+                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p></div><br />";
                 comment.Controls.Add(LT);
             }
         }
