@@ -28,5 +28,8 @@
         <img src="/img/Chevrolet_Camaro.jpg" />
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
+        <br />
+
+        <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
     </center>
 </asp:Content>
