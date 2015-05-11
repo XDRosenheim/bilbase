@@ -9,6 +9,17 @@ public partial class Yaris : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["UserId"] != null)
+        {
+            TextBox.Visible = true;
+            commentBtn.Visible = true;
+        }
+        else
+        {
+            TextBox.Visible = false;
+            commentBtn.Visible = false;
+        }
+
         SqlCarSelect CarSelect = new SqlCarSelect("Yaris");
 
         car_model.Text = CarSelect.Car_Model;
