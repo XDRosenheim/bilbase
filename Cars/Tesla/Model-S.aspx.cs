@@ -1,11 +1,25 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Web.UI;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI.WebControls;
 
 public partial class Model_S : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["UserId"] != null)
+        {
+            TextBox.Visible = true;
+            commentBtn.Visible = true;
+        }
+        else
+        {
+            TextBox.Visible = false;
+            commentBtn.Visible = false;
+        }
+
         SqlCarSelect CarSelect = new SqlCarSelect("Model S");
 
         car_model.Text = CarSelect.Car_Model;
@@ -32,6 +46,19 @@ public partial class Model_S : System.Web.UI.Page
                 LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p></div><br />";
                 comment.Controls.Add(LT);
             }
+        }
+    }
+    protected void commentBtn_Click(object sender, EventArgs e)
+    {
+        if (TextBox.Text != "")
+        {
+            // TODO
+            // Insert comment
+        }
+        else
+        {
+            // TODO
+            // Do nothing.
         }
     }
 }
