@@ -52,11 +52,29 @@ public partial class EditCars : System.Web.UI.Page
             KmPerLiter_Label.Text = "KM per liter:"; 
         }
     }
+
     protected void EditUser_Btn_Click(object sender, EventArgs e) // Copy pasta
     {
         if (Model_Field.Text != "" || BraendstofType_DDL.Text != "" || KmPerLiter_Field.Text != "" || Pris_Field.Text != "" || Aargang_Field.Text != "" || Saeder_Field.Text != "" || Doere_Field.Text != "")
         {
-            SqlModifyCarsString EditUsers = new SqlModifyCarsString("Update cars set model='" + Model_Field.Text + "', braendstoftype='" + BraendstofType_DDL.Text + "', kmperliter='" + KmPerLiter_Field.Text + "', pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
+            int braendstofint = 1;
+            switch (BraendstofType_DDL.Text)
+            {
+                case "Benzin":
+                    braendstofint = 1;
+                    break;
+                case "Diesel":
+                    braendstofint = 2;
+                    break;
+                case "El":
+                    braendstofint = 3;
+                    break;
+                case "Hybrid":
+                    braendstofint = 4;
+                    break;
+            }
+
+            SqlModifyCarsString EditUsers = new SqlModifyCarsString("Update cars set model='" + Model_Field.Text + "', braendstoftype='" + braendstofint + "', kmperliter=" + KmPerLiter_Field.Text + ", pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
 
             StatusText_Label.Text = "Du har redigeret informationer for bilen " + GetCarModel_DDL.Text;
         }

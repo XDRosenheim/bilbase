@@ -37,7 +37,7 @@ public class SqlSelectCarsString
         while (SqlCarsReader.Read())
         {
             DB_cars_model = SqlCarsReader["model"].ToString();
-            DB_cars_braendstoftype = SqlCarsReader["type"].ToString();
+            DB_cars_braendstoftype = SqlCarsReader["braendstofType"].ToString();
             DB_cars_kmperliter = SqlCarsReader["kmperliter"].ToString();
             DB_cars_pris = SqlCarsReader["pris"].ToString();
             DB_cars_aargang = SqlCarsReader["aargang"].ToString();
