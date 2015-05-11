@@ -17,7 +17,7 @@ public class SqlCommentSelectString
 
         SqlCommand DBCommand = new SqlCommand(commandString, DBStr);
 
-        DBCommand.Connection = DBStr;
+        //DBCommand.Connection = DBStr;
         DBStr.Open();
         //DBCommand.ExecuteReader();
 

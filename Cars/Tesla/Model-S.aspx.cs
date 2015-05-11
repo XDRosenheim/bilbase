@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Web.UI;
 
 public partial class Model_S : System.Web.UI.Page
@@ -21,6 +22,13 @@ public partial class Model_S : System.Web.UI.Page
         }
 
         LiteralControl LT = new LiteralControl();
-        LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\"></asp:Label>";
+
+        //SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S ");
+
+        for (int i = 0; i < INSERTLENGHTHERE; i++)
+        {
+            LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\" Text=" + Comments.SqlCommentReader["comment"].ToString() + "></asp:Label><br>";
+            comment.Controls.Add(LT);
+        }
     }
 }
