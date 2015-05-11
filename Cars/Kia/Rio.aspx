@@ -25,6 +25,7 @@
                 <td><asp:Label ID="car_doors" runat="server" Text="N/A"></asp:Label></td>
             </tr>
         </table>
+        <img src="/img/Kia_Rio.jpg" />
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
     </center>

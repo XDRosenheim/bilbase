@@ -101,3 +101,7 @@ p {
     width:100px;
     text-align:center;
 }
+
+.Content img {
+    width:700px;
+}
