@@ -58,6 +58,13 @@ p {
     top:-720px;
 }
 
+.Comments {
+    height:100px;
+    width:80%;
+    background-color:#c8c8c8;
+    color:black;
+}
+
 /* Le menu */
 
 .LeftSideMenu {

@@ -26,6 +26,6 @@
         </table>
     </center>
     <div class="comment">
-        <asp:Label ID="comment" runat="server" Text=""></asp:Label>
+        <asp:Label class="Comments" ID="comment" runat="server"></asp:Label>
     </div>
 </asp:Content>

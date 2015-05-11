@@ -23,5 +23,6 @@ public partial class Rio : System.Web.UI.Page
         {
             Label4.Text = "KM/Opladning";
         }
+
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class Model_S : System.Web.UI.Page
 {
@@ -25,5 +21,6 @@ public partial class Model_S : System.Web.UI.Page
         }
 
         LiteralControl LT = new LiteralControl();
+        LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\"></asp:Label>";
     }
 }
