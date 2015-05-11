@@ -31,7 +31,7 @@ public partial class Yaris : System.Web.UI.Page
         {
             for (int i = 1; i <= rowCounter.Rows; i++)
             {
-                SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S WHERE ID=" + i);
+                SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Toyota_Yaris WHERE ID=" + i);
                 LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p><br />";
                 comment.Controls.Add(LT);
             }
