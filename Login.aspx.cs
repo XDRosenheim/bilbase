@@ -21,7 +21,7 @@ public partial class Login : System.Web.UI.Page
                         Response.Redirect("/User/Admin.aspx");
                         break;
                     case "2":
-                        Response.Redirect("/User/User.aspx");
+                        Response.Redirect("/Default.aspx");
                         break;
                     default:
                         Response.Redirect("/");
