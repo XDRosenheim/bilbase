@@ -54,6 +54,7 @@ public partial class Model_S : System.Web.UI.Page
         {
             // TODO
             // Insert comment
+            something sqlinsert = new something("INSERT INTO comment_Tesla_Model_S VALUES ('" + TextBox.Text + "')");
         }
         else
         {

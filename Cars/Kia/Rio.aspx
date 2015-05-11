@@ -29,7 +29,9 @@
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
         <br />
-
-        <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
+        <br />  
+        <asp:TextBox class="commentBox" ID="TextBox" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="commentBtn" runat="server" Text="Button" OnClick="commentBtn_Click"></asp:Button>
     </center>
 </asp:Content>

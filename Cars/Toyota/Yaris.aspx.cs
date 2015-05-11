@@ -37,4 +37,19 @@ public partial class Yaris : System.Web.UI.Page
             }
         }
     }
+
+    protected void commentBtn_Click(object sender, EventArgs e)
+    {
+        if (TextBox.Text != "")
+        {
+            // TODO
+            // Insert comment
+            something sqlinsert = new something("INSERT INTO comment_Toyota_Yaris VALUES ('" + TextBox.Text + "')");
+        }
+        else
+        {
+            // TODO
+            // Do nothing.
+        }
+    }
 }
