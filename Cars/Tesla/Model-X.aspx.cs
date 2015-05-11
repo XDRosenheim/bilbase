@@ -20,7 +20,7 @@ public partial class Model_X : System.Web.UI.Page
             commentBtn.Visible = false;
         }
 
-        SqlCarSelect CarSelect = new SqlCarSelect("Model X"); //TODO
+        SqlCarSelect CarSelect = new SqlCarSelect("Model X");
 
         car_model.Text = CarSelect.Car_Model;
         car_mærke.Text = CarSelect.Car_Brand;
@@ -55,7 +55,7 @@ public partial class Model_X : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Tesla_Model_X VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Tesla_Model_X VALUES ('" + TextBox.Text + "')");
         }
         else
         {

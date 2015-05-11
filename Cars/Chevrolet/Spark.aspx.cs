@@ -55,7 +55,7 @@ public partial class Spark : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Chevrolet_Spark VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Chevrolet_Spark VALUES ('" + TextBox.Text + "')");
         }
         else
         {

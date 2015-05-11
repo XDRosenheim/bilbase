@@ -55,7 +55,7 @@ public partial class Rio : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Kia_Rio VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Kia_Rio VALUES ('" + TextBox.Text + "')");
         }
         else
         {

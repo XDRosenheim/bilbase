@@ -43,23 +43,24 @@ public partial class Model_S : System.Web.UI.Page
             for (int i = 1; i <= rowCounter.Rows; i++)
             {
                 SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S WHERE ID=" + i);
-                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p></div><br />";
+                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_commenter + " says:</p><br /><p>" + Comments.DB_comment + "</p></div><br />";
                 comment.Controls.Add(LT);
             }
         }
     }
+
     protected void commentBtn_Click(object sender, EventArgs e)
     {
         if (TextBox.Text != "")
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Tesla_Model_S VALUES ('" + TextBox.Text + "')");
+            SqlRunCommandString submitComment = new SqlRunCommandString("INSERT INTO comment_Tesla_Model_S VALUES('" + TextBox.Text + "','" + Session["UserId"].ToString() + "',1)");
         }
         else
         {
-            // TODO
             // Do nothing.
         }
+        Response.Redirect("/Cars/Tesla/Model-S.aspx");
     }
 }

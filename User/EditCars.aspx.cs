@@ -74,7 +74,7 @@ public partial class EditCars : System.Web.UI.Page
                     break;
             }
 
-            SqlModifyCarsString EditUsers = new SqlModifyCarsString("Update cars set model='" + Model_Field.Text + "', braendstoftype='" + braendstofint + "', kmperliter=" + KmPerLiter_Field.Text.Replace(",",".") + ", pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
+            SqlRunCommandString EditUsers = new SqlRunCommandString("Update cars set model='" + Model_Field.Text + "', braendstoftype='" + braendstofint + "', kmperliter=" + KmPerLiter_Field.Text.Replace(",",".") + ", pris='" + Pris_Field.Text + "', aargang='" + Aargang_Field.Text + "', saeder='" + Saeder_Field.Text + "', doere='" + Doere_Field.Text + "' where model='" + GetCarModel_DDL.Text + "'");
 
             StatusText_Label.Text = "Du har redigeret informationer for bilen " + GetCarModel_DDL.Text;
         }

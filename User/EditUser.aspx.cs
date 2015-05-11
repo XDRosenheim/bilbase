@@ -35,7 +35,7 @@ public partial class EditUser : System.Web.UI.Page
         if (Username_Field.Text != "" || Password_Field.Text != "" || Mail_Field.Text != "" || Tlf_Field.Text != "" || Rolle_DDL.Text != "")
         {
 
-            SqlModifyUserString EditUsers = new SqlModifyUserString("Update users set username='" + Username_Field.Text + "', password='" + Password_Field.Text + "', mail='" + Mail_Field.Text + "', tlf='" + Tlf_Field.Text + "', usergroup=" + Rolle_DDL.Text + " where username='" + GetUser_DDL.Text + "'");
+            SqlRunCommandString EditUsers = new SqlRunCommandString("Update users set username='" + Username_Field.Text + "', password='" + Password_Field.Text + "', mail='" + Mail_Field.Text + "', tlf='" + Tlf_Field.Text + "', usergroup=" + Rolle_DDL.Text + " where username='" + GetUser_DDL.Text + "'");
 
             StatusText_Label.Text = "Du har redigeret informationer for brugeren " + GetUser_DDL.Text;
         }
@@ -76,7 +76,7 @@ public partial class EditUser : System.Web.UI.Page
         }
         else
         {
-        SqlModifyUserString DelUser = new SqlModifyUserString("DELETE FROM users WHERE username='" + Username_Field.Text + "'");
+        SqlRunCommandString DelUser = new SqlRunCommandString("DELETE FROM users WHERE username='" + Username_Field.Text + "'");
         Response.Redirect("/User/EditUser.aspx");
         }
     }

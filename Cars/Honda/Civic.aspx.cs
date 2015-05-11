@@ -50,7 +50,7 @@ public partial class Civic : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Honda_Civic VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Honda_Civic VALUES ('" + TextBox.Text + "')");
         }
         else
         {

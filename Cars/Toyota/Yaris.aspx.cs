@@ -55,7 +55,7 @@ public partial class Yaris : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Toyota_Yaris VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Toyota_Yaris VALUES ('" + TextBox.Text + "')");
         }
         else
         {

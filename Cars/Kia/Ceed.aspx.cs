@@ -55,7 +55,7 @@ public partial class Ceed : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Kia_Ceed VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Kia_Ceed VALUES ('" + TextBox.Text + "')");
         }
         else
         {

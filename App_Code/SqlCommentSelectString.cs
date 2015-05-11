@@ -12,15 +12,9 @@ public class SqlCommentSelectString
 	public SqlCommentSelectString(string commandString)
 	{
         SqlString DatabaseString = new SqlString();
-
         SqlConnection DBStr = new SqlConnection(DatabaseString.DatabaseString.ToString());
-
         SqlCommand DBCommand = new SqlCommand(commandString, DBStr);
-
-        //DBCommand.Connection = DBStr;
         DBStr.Open();
-        //DBCommand.ExecuteReader();
-
         SqlCommentReader = DBCommand.ExecuteReader();
 
         while (SqlCommentReader.Read())

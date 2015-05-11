@@ -1,8 +1,8 @@
 ﻿using System.Data.SqlClient;
 
-public class SqlModifyCarsString
+public class SqlRunCommandString
 {
-	public SqlModifyCarsString(string commandString)
+	public SqlRunCommandString(string commandString)
 	{
         SqlString DatabaseString = new SqlString();
 

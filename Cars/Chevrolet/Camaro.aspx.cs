@@ -55,7 +55,7 @@ public partial class Camaro : System.Web.UI.Page
         {
             // TODO
             // Insert comment
-            something sqlinsert = new something("INSERT INTO comment_Chevrolet_Camaro VALUES ('" + TextBox.Text + "')");
+            //something sqlinsert = new something("INSERT INTO comment_Chevrolet_Camaro VALUES ('" + TextBox.Text + "')");
         }
         else
         {
