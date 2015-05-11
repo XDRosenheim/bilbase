@@ -27,15 +27,15 @@
                     <li class="MenuHeader"><asp:Label ID="Label2" runat="server" Text="Toyota"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="/Cars/Toyota/Aygo.aspx">Aygo</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="/Cars/Toyota/Yaris.aspx">Yaris</asp:HyperLink></li>
-                    <li class="MenuHeader"><asp:Label ID="Label3" runat="server" Text="Skoda"></asp:Label></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="/Cars/Skoda/Fabia.aspx">Fabia</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="/Cars/Skoda/Octavia.aspx">Octavia</asp:HyperLink></li>
+                    <li class="MenuHeader"><asp:Label ID="Label3" runat="server" Text="Kia"></asp:Label></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="/Cars/Kia/Ceed.aspx">Cee'd</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="/Cars/Kia/Rio.aspx">Rio</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label4" runat="server" Text="Chevrolet"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="/Cars/Chevrolet/Camaro.aspx">Camaro</asp:HyperLink></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="/Cars/Chevrolet/Spark.aspx">Spark</asp:HyperLink></li>
                     <li class="MenuHeader"><asp:Label ID="Label5" runat="server" Text="Tesla"></asp:Label></li>
                     <li class="SubMenu"><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="/Cars/Tesla/Model-S.aspx">Model S</asp:HyperLink></li>
-                    <li class="SubMenu"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="/Cars/Tesla/Clio.aspx">Clio</asp:HyperLink></li>
+                    <li class="SubMenu"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="/Cars/Tesla/Model-X.aspx">Model X</asp:HyperLink></li>
                 </ul>
             </div>
             <div class="Content">
