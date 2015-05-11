@@ -23,5 +23,18 @@ public partial class Aygo : System.Web.UI.Page
         {
             Label4.Text = "KM/Opladning";
         }
+
+        LiteralControl LT = new LiteralControl();
+        SqlRowCount rowCounter = new SqlRowCount("comment_Toyota_Aygo");
+        if (rowCounter.Rows == 0) { }
+        else
+        {
+            for (int i = 1; i <= rowCounter.Rows; i++)
+            {
+                SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S WHERE ID=" + i);
+                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p><br />";
+                comment.Controls.Add(LT);
+            }
+        }
     }
 }
