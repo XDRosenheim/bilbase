@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <center>        
+    <center>       
+        <h4>Specificationer</h4> 
         <table>
             <tr>
                 <td><asp:Label ID="Label1" runat="server" Text="Mærke"></asp:Label></td>
@@ -24,5 +25,7 @@
                 <td><asp:Label ID="car_doors" runat="server" Text="N/A"></asp:Label></td>
             </tr>
         </table>
+        <h4>Kommentarer</h4>
+        <asp:Label ID="comment" runat="server"></asp:Label>
     </center>
 </asp:Content>

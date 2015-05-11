@@ -28,5 +28,4 @@
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
     </center>
-
 </asp:Content>
