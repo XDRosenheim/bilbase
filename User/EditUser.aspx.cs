@@ -70,8 +70,15 @@ public partial class EditUser : System.Web.UI.Page
     }
     protected void btn_sure_Click(object sender, EventArgs e)
     {
+        if (Username_Field.Text.ToLower() == "admin")
+        {
+            StatusText_Label.Text = "Admin kan ikke slettes.";
+        }
+        else
+        {
         SqlModifyUserString DelUser = new SqlModifyUserString("DELETE FROM users WHERE username='" + Username_Field.Text + "'");
         Response.Redirect("/User/EditUser.aspx");
+        }
     }
     protected void btn_NOPE_Click(object sender, EventArgs e)
     {
