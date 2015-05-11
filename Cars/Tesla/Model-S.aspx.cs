@@ -21,13 +21,13 @@ public partial class Model_S : System.Web.UI.Page
             Label4.Text = "KM/Opladning";
         }
 
-        SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S");
-
         LiteralControl LT = new LiteralControl();
 
-        while (Comments.SqlCommentReader.Read())
+        //SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S ");
+
+        for (int i = 0; i < INSERTLENGHTHERE; i++)
         {
-            LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\" Text=" + Comments.DB_comment + "></asp:Label><br>";
+            LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\" Text=" + Comments.SqlCommentReader["comment"].ToString() + "></asp:Label><br>";
             comment.Controls.Add(LT);
         }
     }

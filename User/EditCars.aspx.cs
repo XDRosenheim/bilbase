@@ -83,27 +83,4 @@ public partial class EditCars : System.Web.UI.Page
             StatusText_Label.Text = "Du har ikke indtastet en værdi i alle felterne.";
         }
     }
-    protected void EditUser_del_Click(object sender, EventArgs e) // Copy pasta
-    {
-        if (Model_Field.Text == "")
-        {
-            Label1.Text = "Ingen bil er valgt, hent bil data og prøv igen.";
-            Label1.Visible = true;
-        }
-        else
-        {
-            btn_NOPE.Visible = true;
-            btn_sure.Visible = true;
-            Label1.Visible = true;
-        }
-    }
-    protected void btn_sure_Click(object sender, EventArgs e)
-    {
-        SqlModifyCarsString DelUser = new SqlModifyCarsString("DELETE FROM cars INNER JOIN maerke ON maerke.maerkeID = cars.maerke INNER JOIN braendstof ON braendstof.ID = cars.braendstofType WHERE model='" + Model_Field.Text + "'");
-        Response.Redirect("/User/EditCars.aspx");
-    }
-    protected void btn_NOPE_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("/User/EditCars.aspx");
-    }
 }
