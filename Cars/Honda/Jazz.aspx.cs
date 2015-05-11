@@ -18,5 +18,18 @@ public partial class Jazz : System.Web.UI.Page
         car_year.Text = CarSelect.Car_Year;
         car_seats.Text = CarSelect.Car_Seats;
         car_doors.Text = CarSelect.Car_Doors;
+
+        LiteralControl LT = new LiteralControl();
+        SqlRowCount rowCounter = new SqlRowCount("comment_Honda_Jazz");
+        if (rowCounter.Rows == 0) { }
+        else
+        {
+            for (int i = 1; i <= rowCounter.Rows; i++)
+            {
+                SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Honda_Jazz WHERE ID=" + i);
+                LT.Text = "<div class=\"Comments\" ><p>" + Comments.DB_comment + "</p><br />";
+                comment.Controls.Add(LT);
+            }
+        }
     }
 }
