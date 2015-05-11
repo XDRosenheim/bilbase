@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Web.UI;
 
 public partial class Model_S : System.Web.UI.Page
@@ -20,7 +21,14 @@ public partial class Model_S : System.Web.UI.Page
             Label4.Text = "KM/Opladning";
         }
 
+        SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S");
+
         LiteralControl LT = new LiteralControl();
-        LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\"></asp:Label>";
+
+        while (Comments.SqlCommentReader.Read())
+        {
+            LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\" Text=" + Comments.DB_comment + "></asp:Label><br>";
+            comment.Controls.Add(LT);
+        }
     }
 }
