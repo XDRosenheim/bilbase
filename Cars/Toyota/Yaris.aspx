@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Yaris.aspx.cs" Inherits="Yaris" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <center>       
@@ -25,6 +25,7 @@
                 <td><asp:Label ID="car_doors" runat="server" Text="N/A"></asp:Label></td>
             </tr>
         </table>
+        <img src="/img/Toyota_Yaris.png" />
         <h4>Kommentarer</h4>
         <asp:Label ID="comment" runat="server"></asp:Label>
     </center>
