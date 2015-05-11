@@ -63,6 +63,8 @@ p {
     width:80%;
     background-color:#c8c8c8;
     color:black;
+    text-align:center;
+    position:inherit;
 }
 
 /* Le menu */

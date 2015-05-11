@@ -20,17 +20,14 @@ public partial class Model_S : System.Web.UI.Page
         {
             Label4.Text = "KM/Opladning";
         }
-
-        
         
         LiteralControl LT = new LiteralControl();
-
         SqlRowCount rowCounter = new SqlRowCount("comment_Tesla_Model_S");
 
-        for (int i = 0; i < rowCounter.Rows; i++)
+        for (int i = 1; i <= rowCounter.Rows; i++)
         {
             SqlCommentSelectString Comments = new SqlCommentSelectString("SELECT * FROM comment_Tesla_Model_S WHERE ID=" + i);
-            LT.Text = "<asp:Label class=\"Comments\" ID=\"comment\" runat=\"server\" Text=" + Comments.SqlCommentReader["comment"].ToString() + "></asp:Label><br>";
+            LT.Text = "<div class=\"Comments\" ><p>"+ Comments.DB_comment + "</p><br />";
             comment.Controls.Add(LT);
         }
     }
