@@ -17,7 +17,7 @@
     <br />
 
     <asp:Label ID="Model_Label" runat="server" Text="Model:"></asp:Label>
-    <asp:TextBox ID="Model_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle" ID="Model_Field" runat="server"></asp:TextBox>
     <br />
 
     <asp:Label ID="BraendstofType_Label" runat="server" Text="Brændstofs type:"></asp:Label>
@@ -31,23 +31,23 @@
     <br />
 
     <asp:Label ID="KmPerLiter_Label" runat="server" Text="KM per liter:"></asp:Label>
-    <asp:TextBox ID="KmPerLiter_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle"  ID="KmPerLiter_Field" runat="server"></asp:TextBox>
     <br />
 
     <asp:Label ID="Pris_Label" runat="server" Text="Pris:"></asp:Label>
-    <asp:TextBox ID="Pris_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle"  ID="Pris_Field" runat="server"></asp:TextBox>
     <br />
 
     <asp:Label ID="Aargang" runat="server" Text="Årgang:"></asp:Label>
-    <asp:TextBox ID="Aargang_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle" ID="Aargang_Field" runat="server"></asp:TextBox>
     <br />
 
     <asp:Label ID="Saeder_Label" runat="server" Text="Sæder:"></asp:Label>
-    <asp:TextBox ID="Saeder_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle"  ID="Saeder_Field" runat="server"></asp:TextBox>
     <br />
 
     <asp:Label ID="Doere_Label" runat="server" Text="Døre:"></asp:Label>
-    <asp:TextBox ID="Doere_Field" runat="server"></asp:TextBox>
+    <asp:TextBox class="TextBoxStyle"  ID="Doere_Field" runat="server"></asp:TextBox>
     <br />
     <br />
 
