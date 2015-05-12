@@ -59,5 +59,7 @@ public partial class Ceed : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Kia/Ceed.aspx");
     }
 }

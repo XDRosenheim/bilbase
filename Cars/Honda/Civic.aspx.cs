@@ -54,5 +54,7 @@ public partial class Civic : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Honda/Civic.aspx");
     }
 }

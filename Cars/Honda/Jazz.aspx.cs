@@ -54,5 +54,7 @@ public partial class Jazz : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Honda/Jazz.aspx");
     }
 }

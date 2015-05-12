@@ -59,5 +59,7 @@ public partial class Yaris : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Toyota/Yaris.aspx");
     }
 }

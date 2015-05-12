@@ -59,5 +59,7 @@ public partial class Rio : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Kia/Rio.aspx");
     }
 }

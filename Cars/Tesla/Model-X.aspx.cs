@@ -59,5 +59,7 @@ public partial class Model_X : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Tesla/Model-X.aspx");
     }
 }

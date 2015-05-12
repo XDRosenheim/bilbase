@@ -59,5 +59,7 @@ public partial class Camaro : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Chevrolet/Camaro.aspx");
     }
 }

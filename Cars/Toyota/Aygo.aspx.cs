@@ -59,5 +59,7 @@ public partial class Aygo : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Toyota/Aygo.aspx");
     }
 }

@@ -59,5 +59,7 @@ public partial class Spark : System.Web.UI.Page
         {
             // Do nothing.
         }
+
+        Response.Redirect("/Cars/Chevrolet/Spark.aspx");
     }
 }
