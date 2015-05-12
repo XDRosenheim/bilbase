@@ -3,6 +3,18 @@ p {
     margin: 0;
 }
 
+h1 { 
+    color: #000000; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 62px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+
 .TextBoxStyle {
 	width: 230px;
 	border: 1px solid #3366FF;
@@ -30,7 +42,8 @@ p {
 
 /* Logo properties */
 
-.Logo {
+.Logo img {
+    margin-top: 10%;
     min-height: 100px;
     min-width: 100px;
     max-height: 150px;
@@ -110,11 +123,4 @@ p {
 
 .Content img {
     width:700px;
-}
-
-.Footer {
-    height: 100px;
-    background: #b1b1b1;
-    color: white;
-    position: relative;
 }
