@@ -42,6 +42,13 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
+            <div class="Footer">
+                <h3>Site by</h3>
+                <p>Patrick Rosenheim from <a href="http://rosenheim.dk">rosenheim.dk</a></p>
+                <p>Mark Lenti</p>
+                <p>Casper N/A</p>
+            </div>
+
         </div>
     </form>
 </body>

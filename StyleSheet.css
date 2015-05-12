@@ -111,3 +111,10 @@ p {
 .Content img {
     width:700px;
 }
+
+.Footer {
+    height: 100px;
+    background: #b1b1b1;
+    color: white;
+    position: relative;
+}
