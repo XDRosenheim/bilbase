@@ -53,13 +53,10 @@ public partial class Ceed : System.Web.UI.Page
     {
         if (TextBox.Text != "")
         {
-            // TODO
-            // Insert comment
-            //something sqlinsert = new something("INSERT INTO comment_Kia_Ceed VALUES ('" + TextBox.Text + "')");
+            SqlRunCommandString submitComment = new SqlRunCommandString("INSERT INTO comment_Kia_Ceed VALUES('" + TextBox.Text + "','" + Session["UserId"].ToString() + "',1)");
         }
         else
         {
-            // TODO
             // Do nothing.
         }
     }

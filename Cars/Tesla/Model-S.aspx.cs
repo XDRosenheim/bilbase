@@ -53,14 +53,13 @@ public partial class Model_S : System.Web.UI.Page
     {
         if (TextBox.Text != "")
         {
-            // TODO
-            // Insert comment
             SqlRunCommandString submitComment = new SqlRunCommandString("INSERT INTO comment_Tesla_Model_S VALUES('" + TextBox.Text + "','" + Session["UserId"].ToString() + "',1)");
         }
         else
         {
             // Do nothing.
         }
+
         Response.Redirect("/Cars/Tesla/Model-S.aspx");
     }
 }

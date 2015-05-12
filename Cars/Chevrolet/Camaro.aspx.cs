@@ -20,7 +20,7 @@ public partial class Camaro : System.Web.UI.Page
             commentBtn.Visible = false;
         }
 
-        SqlCarSelect CarSelect = new SqlCarSelect("Camaro"); //TODO
+        SqlCarSelect CarSelect = new SqlCarSelect("Camaro");
 
         car_model.Text = CarSelect.Car_Model;
         car_mærke.Text = CarSelect.Car_Brand;
@@ -53,13 +53,10 @@ public partial class Camaro : System.Web.UI.Page
     {
         if (TextBox.Text != "")
         {
-            // TODO
-            // Insert comment
-            //something sqlinsert = new something("INSERT INTO comment_Chevrolet_Camaro VALUES ('" + TextBox.Text + "')");
+            SqlRunCommandString submitComment = new SqlRunCommandString("INSERT INTO comment_Chevrolet_Camaro VALUES('" + TextBox.Text + "','" + Session["UserId"].ToString() + "',1)");
         }
         else
         {
-            // TODO
             // Do nothing.
         }
     }
